@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Navbar from './components/Navbar/navbar'
 import Footer from './components/Footer/footer'
-import Leaf from '../../public//images/leaf.png'
+// import Leaf from '../../public//images/leaf.png'
 import Vector from '../../public/images/Vector.png'
 import Subheading from '../../public//images/subheading.png'
 import LightIcon from '../../public//images/lightbulbIcon.png'
@@ -20,11 +20,11 @@ import Link from 'next/link'
 export default async function Home() {
  
   return (
-    <div className='flex flex-col justify-between'>
+    <div className='absolute flex-row md:flex-col mx-auto'>
     {/*Heading*/}
     <Navbar/>
     <header id='home' className=''>
-      <div className=" h-[100vh] bg-cover bg-center bg-[url('../../public/images/bannerbg.png')] px-20 flex flex-col justify-center">
+      <div className="h-[100vh] bg-cover bg-center bg-[url('../../public/images/bannerbg.png')] px-20 flex flex-col justify-center">
         <div className=' flex flex-col items-end w-[320px]'>
           <div className='font-poppins font-bold text-white text-[17.5px] leading-[30px] self-start'>Welcome to New Green Land Farming</div>
           <Image 
@@ -33,13 +33,7 @@ export default async function Home() {
             width={200}
           />
         </div>
-        <div className='flex flex-col w-1/2 items-end'>
-          <Image 
-            src={Leaf}
-            alt=''
-            width={50}
-            height={50}
-            />
+        <div className='flex flex-col w-1/2 items-end mt-5'>
           <h1 className='font-livvic font-bold leading-[70px] text-amber text-[50px] self-start mt-[-20px]'>Urban Farming Matter</h1>
           <h1 className='font-livvic font-bold leading-[70px] text-white text-[50px] self-start'>Good production</h1>
         </div>
@@ -268,7 +262,7 @@ export default async function Home() {
               defaultValue={''}
             />
           </div>
-          <button type='submit' className='bg-amber text-black w-2/5 mt-5 px-2 py-2 font-poppins font-bold rounded-xl hover:scale-110 ease-in duration-100'>SEND MESSAGE</button>
+          <button type='submit' className='bg-amber text-black lg:w-2/5 mt-5 px-2 py-2 font-poppins font-bold rounded-xl hover:scale-110 ease-in duration-100'>SEND MESSAGE</button>
         </form>
       </div>
 

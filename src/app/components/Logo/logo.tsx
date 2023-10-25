@@ -10,7 +10,13 @@ function Logo() {
         height={50}
         width={60}
       />
-      <h1 className='text-green text-[20px] font-poppins font-bold ml-2'>AGreen <span className='text-amber'>Nature</span> Connect</h1>
+      <h1 className='text-green text-[20px] font-poppins font-bold ml-2'>
+        AGreen 
+        <span className='text-amber'> 
+          Nature
+        </span> 
+        Connect
+      </h1>
     </div>
   )
 }
